@@ -1,0 +1,9 @@
+git checkout feature/api      # убедиться, что мы в нужной ветке
+git merge main                # "влить main в текущую ветку"
+
+ Отменить последний коммит, но оставить изменения
+git reset --soft HEAD~1
+
+ Посмотреть, какие коммиты есть в fix/frontend, но нет в main
+
+git log main..fix/frontend --oneline
